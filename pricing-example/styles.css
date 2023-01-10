@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.homepage-container {
+  padding: 24px;
+  min-height: 100vh;
+  background-color: rgb(229, 254, 246);
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.pricing-plan {
+  background-color: white;
+  border: 1px solid lightgray;
+  text-align: center;
+  padding: 20px;
+}
+
+.pricing-plan h3 {
+  margin: 0;
+}
+
+.pricing-plan p {
+  color: gray;
+}
+
+.pricing-plan.featured {
+  border-color: blue;
+}
+
+.pricing-plan.featured h3 {
+  color: blue;
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 800px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
